@@ -29,8 +29,21 @@ console.log(arounRand)
 
 // Generate a random number between 50 and 100 inclusively.
 
+let num = Math.floor(Math.random ()* 51 ) +50 
+console.log(num)
+
+// creates random number between 0 and 10
+console.log(Math.floor(Math.random() * 11))
 // Generate a random number between 0 and 255 inclusively.
-
+console.log(Math.floor(Math.random() * 255))
 // Access the 'JavaScript' string characters using a random number.
-
+dayTwo = Math.random()
+console.log(dayTwo)
 // Use console.log() and escape characters to print the following pattern.
+console.log('1\t1\t1\t1\t\n2\t1\t2\t4\t8\n3\t1\t3\t9\t27\n4\t1\t4\t16\t64\n5\t1\t5\t25\t125')
+
+// \n break
+// \t Tab, means space
+
+let sentence = 'You cannot end a sentence with because because because is a conjunction'
+console.log(sentence.substr(30,24))
