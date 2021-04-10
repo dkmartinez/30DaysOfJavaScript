@@ -28,6 +28,7 @@ console.log(itCompanies)
 // Print the number of companies in the array
 console.log(itCompanies.length)
 // Print the first company, middle and last company
+
 console.log(itCompanies[0])
 console.log(itCompanies[3])
 console.log(itCompanies[6])
@@ -50,7 +51,7 @@ console.log(bigSentence.includes('Microsoft'))
 console.log(bigSentence.includes('Google'))
 console.log(bigSentence.includes('Oracle'))
 // Filter out companies which have more than one 'o' without the filter method
-let withLetherO = bigSentence.indexOf('o')
+let withLetherO = bigSentence.indexOf('oo')
 // console.log(withLetherO)
 withLetherO != -1 
 ?console.log(`You have words with 'o' ${itCompanies}`)
@@ -61,19 +62,33 @@ withLetherO != -1
 console.log(itCompanies.sort())
 // Reverse the array using reverse() method
 console.log(itCompanies.reverse())
+
 // Slice out the first 3 companies from the array
 console.log(itCompanies.slice(1,4))
+
 // Slice out the last 3 companies from the array
-console.log(itCompanies.splice(4))
+const itCompanies2 =[ 'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+console.log(itCompanies2.splice(1,4))
+
 // Slice out the middle IT company or companies from the array
 console.log(itCompanies[3])
+
 // Remove the first IT company from the array
+
 let removeFirst = itCompanies.shift()
 console.log(removeFirst)
-// Remove the middle IT company or companies from the array
+
+
 console.log(itCompanies.splice(1,3,5,6))
 // Remove the last IT company from the array
-let lastItem = itCompanies.pop()
-console.log(lastItem)
+const itCompanies3 = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+itCompanies3.pop();
+console.log(itCompanies3)
+
 // Remove all IT companies
 console.log(itCompanies.splice())
+
+// Remove the middle IT company or companies from the array
+
+itCompanies3.splice(3,3)
+console.log(itCompanies3)
